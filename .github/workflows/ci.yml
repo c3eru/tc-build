@@ -29,7 +29,6 @@ jobs:
       - name: Clone LLVM project
         run: git clone --single-branch "${{ env.llvm_url }}" -b main src/llvm-project --depth=1
 
-  jobs:
   build_profile:
     name: Build LLVM (profile)
     runs-on: ubuntu-latest
